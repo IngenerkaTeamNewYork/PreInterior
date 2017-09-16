@@ -12,11 +12,11 @@ int main()
     HDC flatPic;
 
     if (strcmp(flatStr, "1") == 0) {
-        flatPic = txLoadImage ("Flats\\flat1.bmp");
+        flatPic = txLoadImage ("flat1.bmp");
     } else if (strcmp(flatStr, "2") == 0) {
-        flatPic = txLoadImage ("Flats\\flat2.bmp");
+        flatPic = txLoadImage ("flat2.bmp");
     } else if (strcmp(flatStr, "3") == 0) {
-        flatPic = txLoadImage ("Flats\\flat3.bmp");
+        flatPic = txLoadImage ("flat3.bmp");
     }
 
     txBitBlt (txDC(), 0, 0, 800, 600, flatPic, 0, 0);
